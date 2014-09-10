@@ -1,0 +1,831 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_l_RNoFsUEeKE--wY69ZEDQ">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_mCL-wFsUEeKE--wY69ZEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_mCNM4FsUEeKE--wY69ZEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+  </elementImport>
+  <elementImport xmi:id="_mCgH0FsUEeKE--wY69ZEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_mDNScFsUEeKE--wY69ZEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+  </elementImport>
+  <elementImport xmi:id="_mHIJIVsUEeKE--wY69ZEDQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_l_RNoVsUEeKE--wY69ZEDQ" name="edu">
+    <packagedElement xmi:type="uml:Package" xmi:id="_l_RNolsUEeKE--wY69ZEDQ" name="csu">
+      <packagedElement xmi:type="uml:Package" xmi:id="_l_RNo1sUEeKE--wY69ZEDQ" name="speedo">
+        <packagedElement xmi:type="uml:Package" xmi:id="_l_R0sFsUEeKE--wY69ZEDQ" name="download">
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_R0sVsUEeKE--wY69ZEDQ" name="VoicePlay">
+            <ownedOperation xmi:id="_mBYtgFsUEeKE--wY69ZEDQ" name="playvoice" visibility="package"/>
+            <ownedOperation xmi:id="_mCL-wVsUEeKE--wY69ZEDQ" name="main" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mCL-wlsUEeKE--wY69ZEDQ" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mCL-w1sUEeKE--wY69ZEDQ" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mCL-xFsUEeKE--wY69ZEDQ"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_TC0FsUEeKE--wY69ZEDQ" name="SpeedRunnable">
+            <ownedAttribute xmi:id="_mCPCEFsUEeKE--wY69ZEDQ" name="rowNum" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mCPCEVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mCSFYFsUEeKE--wY69ZEDQ" name="src" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_mCSFYVsUEeKE--wY69ZEDQ" value=""/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mCVIsFsUEeKE--wY69ZEDQ" name="fileSize" visibility="public">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mCVIsVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mCYMAFsUEeKE--wY69ZEDQ" name="completeSize1" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mCYMAVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mCbPUFsUEeKE--wY69ZEDQ" name="completeSize2" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mCbPUVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mCeSoFsUEeKE--wY69ZEDQ" name="remainSize" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mCeSoVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mCh9AFsUEeKE--wY69ZEDQ" name="isComplete" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_mCh9AVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mClAUFsUEeKE--wY69ZEDQ" name="isParentStop" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_mClAUVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mCoDoFsUEeKE--wY69ZEDQ" name="isParentDestory" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_mCoDoVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_mCp40FsUEeKE--wY69ZEDQ" name="setIsParentDestory" visibility="public">
+              <ownedParameter xmi:id="_mCp40VsUEeKE--wY69ZEDQ" name="flag">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mCruAFsUEeKE--wY69ZEDQ" name="run" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_U4AFsUEeKE--wY69ZEDQ" name="DownloadThread">
+            <ownedAttribute xmi:id="_mCv_cFsUEeKE--wY69ZEDQ" name="src" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mC2tIFsUEeKE--wY69ZEDQ" name="dest" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mC9a0FsUEeKE--wY69ZEDQ" name="name" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mDDhcFsUEeKE--wY69ZEDQ" name="live" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_mDDhcVsUEeKE--wY69ZEDQ" value="true"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mDKPIFsUEeKE--wY69ZEDQ" name="loading" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_mDKPIVsUEeKE--wY69ZEDQ" value="0%"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mDQVwFsUEeKE--wY69ZEDQ" name="speedRate" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mDQVwVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mDXDcFsUEeKE--wY69ZEDQ" name="remainingTime" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mDXDcVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mDj3wFsUEeKE--wY69ZEDQ" name="sumlen" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mDj3wVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mDqlcFsUEeKE--wY69ZEDQ" name="filelen" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mDqlcVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mDwsEFsUEeKE--wY69ZEDQ" name="fileSize" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mDwsEVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mD2ysFsUEeKE--wY69ZEDQ" name="stop" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_mD2ysVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mD85UFsUEeKE--wY69ZEDQ" name="offset" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mD85UVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mEDnAFsUEeKE--wY69ZEDQ" name="finish" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_mEDnAVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mEJtoFsUEeKE--wY69ZEDQ" name="destory" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+              <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_mEJtoVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_mEMw8FsUEeKE--wY69ZEDQ" name="run" visibility="public"/>
+            <ownedOperation xmi:id="_mEQbUFsUEeKE--wY69ZEDQ" name="terminate" visibility="public"/>
+            <ownedOperation xmi:id="_mEUFsFsUEeKE--wY69ZEDQ" name="restart" visibility="public"/>
+            <ownedOperation xmi:id="_mEXJAFsUEeKE--wY69ZEDQ" name="setDestory" visibility="public"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_YiYFsUEeKE--wY69ZEDQ" name="DataDispose">
+            <ownedOperation xmi:id="_mEazYFsUEeKE--wY69ZEDQ" name="turnToMb" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mEazYVsUEeKE--wY69ZEDQ" name="num">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mEazYlsUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mEcBgFsUEeKE--wY69ZEDQ" name="turnToKb" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mEcBgVsUEeKE--wY69ZEDQ" name="num">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mEcBglsUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mEd2sFsUEeKE--wY69ZEDQ" name="turnToTimeFormat" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mEd2sVsUEeKE--wY69ZEDQ" name="num">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mEd2slsUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mEfE0FsUEeKE--wY69ZEDQ" name="turntoPercent" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mEfE0VsUEeKE--wY69ZEDQ" name="numSon">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mEfE0lsUEeKE--wY69ZEDQ" name="numMo">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mEfE01sUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_ZwgFsUEeKE--wY69ZEDQ" name="Download">
+            <ownedOperation xmi:id="_mEgS8FsUEeKE--wY69ZEDQ" name="down" visibility="public">
+              <ownedParameter xmi:id="_mEgS8VsUEeKE--wY69ZEDQ" name="src">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mEgS8lsUEeKE--wY69ZEDQ" name="dest">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mEgS81sUEeKE--wY69ZEDQ" name="name">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_l_a-oFsUEeKE--wY69ZEDQ" name="model">
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_a-oVsUEeKE--wY69ZEDQ" name="ModelUser">
+            <ownedAttribute xmi:id="_mEj9UFsUEeKE--wY69ZEDQ" name="dateModel" visibility="public" isStatic="true" type="_mBQxsVsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mEo10FsUEeKE--wY69ZEDQ" name="dateModelDownloading" visibility="public" isStatic="true" type="_mBQxsVsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mEuVYFsUEeKE--wY69ZEDQ" name="dateModelFinish" visibility="public" isStatic="true" type="_mBQxsVsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mEz08FsUEeKE--wY69ZEDQ" name="allDownloadDateInf" visibility="package" isStatic="true" type="_mExYsFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mE5UgFsUEeKE--wY69ZEDQ" name="allDownloadDate" visibility="package" isStatic="true" type="_mExYsFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mE-0EFsUEeKE--wY69ZEDQ" name="urls" visibility="package" isStatic="true" type="_mE7wwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mFDskFsUEeKE--wY69ZEDQ" name="urlsDownloading" visibility="package" isStatic="true" type="_mE7wwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mFOEoFsUEeKE--wY69ZEDQ" name="urlsFinish" visibility="package" isStatic="true" type="_mE7wwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mFTkMFsUEeKE--wY69ZEDQ" name="runnables" visibility="public" isStatic="true" type="_mFRH8FsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mFZDwFsUEeKE--wY69ZEDQ" name="runnablesDL" visibility="public" isStatic="true" type="_mFRH8FsUEeKE--wY69ZEDQ"/>
+            <ownedOperation xmi:id="_mFbgAFsUEeKE--wY69ZEDQ" name="modelDisplay" visibility="public" isStatic="true"/>
+            <ownedOperation xmi:id="_mFfKYFsUEeKE--wY69ZEDQ" name="addUrl" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mFfKYVsUEeKE--wY69ZEDQ" name="urlName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mFhmoFsUEeKE--wY69ZEDQ" name="removeUrl" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mFhmoVsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mFkp8FsUEeKE--wY69ZEDQ" name="getRowUrl" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mFkp8VsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mFkp8lsUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mFntQFsUEeKE--wY69ZEDQ" name="getRow" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mFntQVsUEeKE--wY69ZEDQ" name="urlId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mFntQlsUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mFqJgFsUEeKE--wY69ZEDQ" name="addUrlDL" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mFqJgVsUEeKE--wY69ZEDQ" name="urlName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mFtM0FsUEeKE--wY69ZEDQ" name="getRowDL" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mFtM0VsUEeKE--wY69ZEDQ" name="urlId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mFtM0lsUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mFwQIFsUEeKE--wY69ZEDQ" name="getRowUrlDL" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mFwQIVsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mFwQIlsUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mFzTcFsUEeKE--wY69ZEDQ" name="removeUrlDL" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mFzTcVsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mF2WwFsUEeKE--wY69ZEDQ" name="addUrlFS" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mF2WwVsUEeKE--wY69ZEDQ" name="urlName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mF5aEFsUEeKE--wY69ZEDQ" name="getRowFS" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mF5aEVsUEeKE--wY69ZEDQ" name="urlId">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mF5aElsUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mF8dYFsUEeKE--wY69ZEDQ" name="getRowUrlFS" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mF8dYVsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mF8dYlsUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mF_gsFsUEeKE--wY69ZEDQ" name="removeUrlFS" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mF_gsVsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGCkAFsUEeKE--wY69ZEDQ" name="addResInf" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGCkAVsUEeKE--wY69ZEDQ" name="vector" type="_mBQKoVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGFnUFsUEeKE--wY69ZEDQ" name="removeResInf" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGFnUVsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGIqoFsUEeKE--wY69ZEDQ" name="getResInf" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGIqoVsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mGIqolsUEeKE--wY69ZEDQ" name="return" type="_mBQKoVsUEeKE--wY69ZEDQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGLt8FsUEeKE--wY69ZEDQ" name="addVector" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGLt8VsUEeKE--wY69ZEDQ" name="vector" type="_mBQKoVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGOxQFsUEeKE--wY69ZEDQ" name="removeVector" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGOxQVsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGSboFsUEeKE--wY69ZEDQ" name="addRow" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGSboVsUEeKE--wY69ZEDQ" name="vector" type="_mBQKoVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGVe8FsUEeKE--wY69ZEDQ" name="removeRow" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGVe8VsUEeKE--wY69ZEDQ" name="num">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGYiQFsUEeKE--wY69ZEDQ" name="setValue" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGYiQVsUEeKE--wY69ZEDQ" name="obj" type="_mGX7MFsUEeKE--wY69ZEDQ"/>
+              <ownedParameter xmi:id="_mGYiQlsUEeKE--wY69ZEDQ" name="row">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mGYiQ1sUEeKE--wY69ZEDQ" name="column">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGcMoFsUEeKE--wY69ZEDQ" name="addRowDLModel" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGcMoVsUEeKE--wY69ZEDQ" name="vector" type="_mBQKoVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGfP8FsUEeKE--wY69ZEDQ" name="removeRowDLModel" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGfP8VsUEeKE--wY69ZEDQ" name="num">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGi6UFsUEeKE--wY69ZEDQ" name="setValueDLModel" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGi6UVsUEeKE--wY69ZEDQ" name="obj" type="_mGX7MFsUEeKE--wY69ZEDQ"/>
+              <ownedParameter xmi:id="_mGi6UlsUEeKE--wY69ZEDQ" name="row">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mGi6U1sUEeKE--wY69ZEDQ" name="column">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGl9oFsUEeKE--wY69ZEDQ" name="addRowFSModel" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGl9oVsUEeKE--wY69ZEDQ" name="vector" type="_mBQKoVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGpA8FsUEeKE--wY69ZEDQ" name="removeRowFSModel" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGpoAFsUEeKE--wY69ZEDQ" name="num">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGsrUFsUEeKE--wY69ZEDQ" name="setValueFSModel" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGsrUVsUEeKE--wY69ZEDQ" name="obj" type="_mGX7MFsUEeKE--wY69ZEDQ"/>
+              <ownedParameter xmi:id="_mGsrUlsUEeKE--wY69ZEDQ" name="row">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mGsrU1sUEeKE--wY69ZEDQ" name="column">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGwVsFsUEeKE--wY69ZEDQ" name="addRunn" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGwVsVsUEeKE--wY69ZEDQ" name="Runn" type="_l_U4AFsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mGzZAFsUEeKE--wY69ZEDQ" name="getRunn" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mGzZAVsUEeKE--wY69ZEDQ" name="num">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mGzZAlsUEeKE--wY69ZEDQ" name="return" type="_l_U4AFsUEeKE--wY69ZEDQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mG7U0FsUEeKE--wY69ZEDQ" name="removeRunnable" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mG7U0VsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mG-YIFsUEeKE--wY69ZEDQ" name="addRunnDL" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mG-YIVsUEeKE--wY69ZEDQ" name="Runn" type="_l_U4AFsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mHBbcFsUEeKE--wY69ZEDQ" name="getRunnDL" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mHBbcVsUEeKE--wY69ZEDQ" name="num">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_mHBbclsUEeKE--wY69ZEDQ" name="return" type="_l_U4AFsUEeKE--wY69ZEDQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mHEewFsUEeKE--wY69ZEDQ" name="removeRunnableDL" visibility="public" isStatic="true">
+              <ownedParameter xmi:id="_mHEewVsUEeKE--wY69ZEDQ" name="index">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_l_eB8FsUEeKE--wY69ZEDQ" name="ui">
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_eB8VsUEeKE--wY69ZEDQ" name="PreviewImage">
+            <ownedComment xmi:id="_l_fQEFsUEeKE--wY69ZEDQ">
+              <body>/** 
+ * 加载显示图象,需要JDK1.5或以上 
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_mHHiEFsUEeKE--wY69ZEDQ" general="_mBRYwVsUEeKE--wY69ZEDQ"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_fQEVsUEeKE--wY69ZEDQ" name="JImagePane">
+            <ownedComment xmi:id="_l_hFQFsUEeKE--wY69ZEDQ">
+              <body>/** 
+ * 可设置背景图片的JPanel，提供了三种显示背景图片的方式：居中、平铺和拉伸。
+ * 未设置背景图片的情况下，同JPanel。
+ * @author 003
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_mHIJIFsUEeKE--wY69ZEDQ" general="_mBRYw1sUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mHJ-UFsUEeKE--wY69ZEDQ" name="serialVersionUID" visibility="private" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mHNosFsUEeKE--wY69ZEDQ" name="CENTRE" visibility="public" isStatic="true" isReadOnly="true">
+              <ownedComment xmi:id="_mHPd4FsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 居中
+ */
+</body>
+              </ownedComment>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_mHNosVsUEeKE--wY69ZEDQ" value="Center"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mHR6IFsUEeKE--wY69ZEDQ" name="TILED" visibility="public" isStatic="true" isReadOnly="true">
+              <ownedComment xmi:id="_mHTvUFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 平铺
+ */
+</body>
+              </ownedComment>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_mHR6IVsUEeKE--wY69ZEDQ" value="Tiled"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mHVkgFsUEeKE--wY69ZEDQ" name="SCALED" visibility="public" isStatic="true" isReadOnly="true">
+              <ownedComment xmi:id="_mHXZsFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 拉伸
+ */
+</body>
+              </ownedComment>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_mHVkgVsUEeKE--wY69ZEDQ" value="Scaled"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mHZO4FsUEeKE--wY69ZEDQ" name="backgroundImage" visibility="private" type="_mBQxtFsUEeKE--wY69ZEDQ">
+              <ownedComment xmi:id="_mHbEEFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 背景图片
+ */
+</body>
+              </ownedComment>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mHc5QFsUEeKE--wY69ZEDQ" name="imageDisplayMode" visibility="private">
+              <ownedComment xmi:id="_mHeucFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 背景图片显示模式
+ */
+</body>
+              </ownedComment>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mHhKsFsUEeKE--wY69ZEDQ" name="modeIndex" visibility="private">
+              <ownedComment xmi:id="_mHi_4FsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 背景图片显示模式索引（引入此属性有助于必要时扩展）
+ */
+</body>
+              </ownedComment>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedAttribute>
+            <ownedOperation xmi:id="_mHjm8FsUEeKE--wY69ZEDQ" name="setBackgroundImage" visibility="public">
+              <ownedComment xmi:id="_mHlcIFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 设置背景图片
+ * @param image 背景图片
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_mHjm8VsUEeKE--wY69ZEDQ" name="image" type="_mBQxtFsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mHmDMFsUEeKE--wY69ZEDQ" name="getBackgroundImage" visibility="public">
+              <ownedComment xmi:id="_mHn4YFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 获取背景图片
+ * @return 背景图片
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_mHmDMVsUEeKE--wY69ZEDQ" name="return" type="_mBQxtFsUEeKE--wY69ZEDQ" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mHn4YVsUEeKE--wY69ZEDQ" name="setImageDisplayMode" visibility="public">
+              <ownedComment xmi:id="_mHptkFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 设置背景图片显示模式
+ * @param modeName 模式名称，取值仅限于ImagePane.TILED ImagePane.SCALED ImagePane.CENTRE
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_mHn4YlsUEeKE--wY69ZEDQ" name="modeName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mHqUoFsUEeKE--wY69ZEDQ" name="getImageDisplayMode" visibility="public">
+              <ownedComment xmi:id="_mHsJ0FsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 获取背景图片显示模式
+ * @return 显示模式
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_mHqUoVsUEeKE--wY69ZEDQ" name="return" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mHsw4FsUEeKE--wY69ZEDQ" name="paintComponent" visibility="protected">
+              <ownedComment xmi:id="_mHumEFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * 绘制组件
+ * @see javax.swing.JComponent#paintComponent(Graphics)
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_mHsw4VsUEeKE--wY69ZEDQ" name="g" type="_mBRYxVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_kIkFsUEeKE--wY69ZEDQ" name="SwitchSkin">
+            <ownedComment xmi:id="_l_nL4FsUEeKE--wY69ZEDQ">
+              <body>/** 
+ * @author  __USER__
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_mHvNIFsUEeKE--wY69ZEDQ" general="_mBRYwVsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mHyQcFsUEeKE--wY69ZEDQ" name="imagePath" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mH4XEFsUEeKE--wY69ZEDQ" name="jButton1" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mH92oFsUEeKE--wY69ZEDQ" name="jButton2" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mID9QFsUEeKE--wY69ZEDQ" name="jButton3" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mIKD4FsUEeKE--wY69ZEDQ" name="jLabel1" visibility="private" type="_mBRYwlsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mIQKgFsUEeKE--wY69ZEDQ" name="jTextField1" visibility="private" type="_mINHMFsUEeKE--wY69ZEDQ"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_l_nL4VsUEeKE--wY69ZEDQ" name="JFrameCloseListener" visibility="package">
+              <generalization xmi:id="_mInW4FsUEeKE--wY69ZEDQ" general="_mBR_0VsUEeKE--wY69ZEDQ"/>
+              <ownedOperation xmi:id="_mInW4VsUEeKE--wY69ZEDQ" name="windowClosing" visibility="public">
+                <ownedParameter xmi:id="_mInW4lsUEeKE--wY69ZEDQ" name="e" type="_mBR_0lsUEeKE--wY69ZEDQ"/>
+              </ownedOperation>
+            </nestedClassifier>
+            <ownedOperation xmi:id="_mITN0FsUEeKE--wY69ZEDQ" name="initComponents" visibility="private">
+              <ownedComment xmi:id="_mIWRIFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * This method is called from within the constructor to
+ * initialize the form.
+ * WARNING: Do NOT modify this code. The content of this method is
+ * always regenerated by the Form Editor.
+ */
+</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mIW4MFsUEeKE--wY69ZEDQ" name="jButton3ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mIW4MVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mIZ7gFsUEeKE--wY69ZEDQ" name="jButton1ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mIZ7gVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mIdl4FsUEeKE--wY69ZEDQ" name="jButton2ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mIdl4VsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mIgpMFsUEeKE--wY69ZEDQ" name="jTextField1ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mIgpMVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mIjsgFsUEeKE--wY69ZEDQ" name="main" visibility="public" isStatic="true">
+              <ownedComment xmi:id="_mImv0FsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * @param args the command line arguments
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_mIkTkFsUEeKE--wY69ZEDQ" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mIkTkVsUEeKE--wY69ZEDQ" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mIkTklsUEeKE--wY69ZEDQ"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_srcFsUEeKE--wY69ZEDQ" name="NewDownload">
+            <generalization xmi:id="_mIuEkFsUEeKE--wY69ZEDQ" general="_mBRYwVsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mIxu8FsUEeKE--wY69ZEDQ" name="storePath" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mI5DsFsUEeKE--wY69ZEDQ" name="urlName" visibility="package">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mJAYcFsUEeKE--wY69ZEDQ" name="jButton1" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mJIUQFsUEeKE--wY69ZEDQ" name="jButton2" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mJPpAFsUEeKE--wY69ZEDQ" name="jButton3" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mJXk0FsUEeKE--wY69ZEDQ" name="jLabel1" visibility="private" type="_mBRYwlsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mJe5kFsUEeKE--wY69ZEDQ" name="jLabel2" visibility="private" type="_mBRYwlsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mJm1YFsUEeKE--wY69ZEDQ" name="jTextField1" visibility="private" type="_mINHMFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mJuxMFsUEeKE--wY69ZEDQ" name="jTextField2" visibility="private" type="_mINHMFsUEeKE--wY69ZEDQ"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_l_wV0FsUEeKE--wY69ZEDQ" name="JFrameCloseListener" visibility="package">
+              <generalization xmi:id="_mKXDUVsUEeKE--wY69ZEDQ" general="_mBR_0VsUEeKE--wY69ZEDQ"/>
+              <ownedOperation xmi:id="_mKXqYFsUEeKE--wY69ZEDQ" name="windowClosing" visibility="public">
+                <ownedParameter xmi:id="_mKXqYVsUEeKE--wY69ZEDQ" name="e" type="_mBR_0lsUEeKE--wY69ZEDQ"/>
+              </ownedOperation>
+            </nestedClassifier>
+            <ownedOperation xmi:id="_mJybkFsUEeKE--wY69ZEDQ" name="initComponents" visibility="private">
+              <ownedComment xmi:id="_mJ1e4FsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * This method is called from within the constructor to
+ * initialize the form.
+ * WARNING: Do NOT modify this code. The content of this method is
+ * always regenerated by the Form Editor.
+ */
+</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mJ2F8FsUEeKE--wY69ZEDQ" name="jButton3ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mJ2F8VsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mJ6XYVsUEeKE--wY69ZEDQ" name="jButton2MouseClicked" visibility="private">
+              <ownedParameter xmi:id="_mJ6XYlsUEeKE--wY69ZEDQ" name="evt" type="_mJ6XYFsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mJ-o0FsUEeKE--wY69ZEDQ" name="jButton1ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mJ-o0VsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mKCTMFsUEeKE--wY69ZEDQ" name="jButton3MouseClicked" visibility="private">
+              <ownedParameter xmi:id="_mKCTMVsUEeKE--wY69ZEDQ" name="evt" type="_mJ6XYFsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mKGkoFsUEeKE--wY69ZEDQ" name="jTextField1MouseClicked" visibility="private">
+              <ownedParameter xmi:id="_mKGkoVsUEeKE--wY69ZEDQ" name="evt" type="_mJ6XYFsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mKK2EFsUEeKE--wY69ZEDQ" name="jTextField2ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mKK2EVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mKPHgFsUEeKE--wY69ZEDQ" name="jTextField1ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mKPHgVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mKSx4FsUEeKE--wY69ZEDQ" name="main" visibility="public" isStatic="true">
+              <ownedComment xmi:id="_mKXDUFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * @param args the command line arguments
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_mKSx4VsUEeKE--wY69ZEDQ" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mKSx4lsUEeKE--wY69ZEDQ" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mKSx41sUEeKE--wY69ZEDQ"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_l_5fwFsUEeKE--wY69ZEDQ" name="MainWindow">
+            <ownedComment xmi:id="_mABbkFsUEeKE--wY69ZEDQ">
+              <body>/** 
+ * @author  __USER__
+ */
+</body>
+            </ownedComment>
+            <generalization xmi:id="_mKb70FsUEeKE--wY69ZEDQ" general="_mBRYwVsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mKniAFsUEeKE--wY69ZEDQ" name="imageName" visibility="package" isStatic="true">
+              <ownedComment xmi:id="_mKwE4FsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * Creates new form MainWindow 
+ */
+</body>
+              </ownedComment>
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_mKniAVsUEeKE--wY69ZEDQ" value="img/background5.jpg"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mK4nwFsUEeKE--wY69ZEDQ" name="image" visibility="package" isStatic="true" type="_mBQxtFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mLJGcFsUEeKE--wY69ZEDQ" name="modelNum" visibility="public" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_mLJGcVsUEeKE--wY69ZEDQ"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_mLaMMFsUEeKE--wY69ZEDQ" name="buttonGroup1" visibility="private" type="_mLRpUFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mLrR8FsUEeKE--wY69ZEDQ" name="jButton1" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mL8-wFsUEeKE--wY69ZEDQ" name="jButton2" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mMOEgFsUEeKE--wY69ZEDQ" name="jButton3" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mMjbsFsUEeKE--wY69ZEDQ" name="jButton4" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mM1vkFsUEeKE--wY69ZEDQ" name="jButton5" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mNG1UFsUEeKE--wY69ZEDQ" name="jButton6" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mNX7EFsUEeKE--wY69ZEDQ" name="jButton7" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mNpA0FsUEeKE--wY69ZEDQ" name="jButton8" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mN6GkFsUEeKE--wY69ZEDQ" name="jButton9" visibility="private" type="_mH1TwFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mOLMUFsUEeKE--wY69ZEDQ" name="jComboBox1" visibility="private" type="_mOCpcFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mOfVYFsUEeKE--wY69ZEDQ" name="jPanel1" visibility="public" isStatic="true" type="_mBRYw1sUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mOwbIFsUEeKE--wY69ZEDQ" name="jScrollPane1" visibility="private" type="_mOofUFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mPCH8FsUEeKE--wY69ZEDQ" name="jTable1" visibility="private" type="_mO5lEFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mPTNsFsUEeKE--wY69ZEDQ" name="jTextField1" visibility="private" type="_mINHMFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mPjsYFsUEeKE--wY69ZEDQ" name="jToolBar1" visibility="private" type="_mPbwkFsUEeKE--wY69ZEDQ"/>
+            <ownedAttribute xmi:id="_mP2AQFsUEeKE--wY69ZEDQ" name="jToolBar2" visibility="private" type="_mPbwkFsUEeKE--wY69ZEDQ"/>
+            <ownedOperation xmi:id="_mP_KMFsUEeKE--wY69ZEDQ" name="initComponents" visibility="private">
+              <ownedComment xmi:id="_mQHGAFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * This method is called from within the constructor to
+ * initialize the form.
+ * WARNING: Do NOT modify this code. The content of this method is
+ * always regenerated by the Form Editor.
+ */
+</body>
+              </ownedComment>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mQHtEFsUEeKE--wY69ZEDQ" name="jButton9ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mQIUIFsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mQReEFsUEeKE--wY69ZEDQ" name="jTextField1MouseClicked" visibility="private">
+              <ownedParameter xmi:id="_mQReEVsUEeKE--wY69ZEDQ" name="evt" type="_mJ6XYFsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mQdEQFsUEeKE--wY69ZEDQ" name="jComboBox1ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mQdEQVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mQmOMFsUEeKE--wY69ZEDQ" name="jButton3ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mQmOMVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mQuxEFsUEeKE--wY69ZEDQ" name="jButton6ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mQuxEVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mQ37AFsUEeKE--wY69ZEDQ" name="jButton7ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mQ37AVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mRBE8FsUEeKE--wY69ZEDQ" name="jButton8ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mRBE8VsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mRKO4FsUEeKE--wY69ZEDQ" name="jButton8MouseClicked" visibility="private">
+              <ownedParameter xmi:id="_mRKO4VsUEeKE--wY69ZEDQ" name="evt" type="_mJ6XYFsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mRSxwFsUEeKE--wY69ZEDQ" name="jButton4ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mRSxwVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mRbUoFsUEeKE--wY69ZEDQ" name="jButton4MouseClicked" visibility="private">
+              <ownedParameter xmi:id="_mRbUoVsUEeKE--wY69ZEDQ" name="evt" type="_mJ6XYFsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mRkekFsUEeKE--wY69ZEDQ" name="jButton5ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mRkekVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mRtBcFsUEeKE--wY69ZEDQ" name="jButton2ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mRtBcVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mR2ycFsUEeKE--wY69ZEDQ" name="jButton1ActionPerformed" visibility="private">
+              <ownedParameter xmi:id="_mR2ycVsUEeKE--wY69ZEDQ" name="evt" type="_mIWRIVsUEeKE--wY69ZEDQ"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mR_8YFsUEeKE--wY69ZEDQ" name="main" visibility="public" isStatic="true">
+              <ownedComment xmi:id="_mSIfQFsUEeKE--wY69ZEDQ">
+                <body>/** 
+ * @param args the command line arguments
+ */
+</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_mR_8YVsUEeKE--wY69ZEDQ" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mR_8YlsUEeKE--wY69ZEDQ" value="*"/>
+                <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mR_8Y1sUEeKE--wY69ZEDQ"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_mSIfQVsUEeKE--wY69ZEDQ" name="setSkin" visibility="public" isStatic="true"/>
+            <ownedOperation xmi:id="_mSUFcFsUEeKE--wY69ZEDQ" name="setWindowIcon" visibility="private"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mBOVcFsUEeKE--wY69ZEDQ" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_mBOVcVsUEeKE--wY69ZEDQ" name="applet">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBOVclsUEeKE--wY69ZEDQ" name="Applet"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBOVc1sUEeKE--wY69ZEDQ" name="AudioClip"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mBOVdFsUEeKE--wY69ZEDQ" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBOVdVsUEeKE--wY69ZEDQ" name="FileInputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBOVdlsUEeKE--wY69ZEDQ" name="IOException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBO8gFsUEeKE--wY69ZEDQ" name="InputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBPjkFsUEeKE--wY69ZEDQ" name="BufferedInputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBPjkVsUEeKE--wY69ZEDQ" name="File"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBPjklsUEeKE--wY69ZEDQ" name="RandomAccessFile"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBQKolsUEeKE--wY69ZEDQ" name="Serializable"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBSm4FsUEeKE--wY69ZEDQ" name="FileNotFoundException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBTN8FsUEeKE--wY69ZEDQ" name="FileOutputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBTN8VsUEeKE--wY69ZEDQ" name="ObjectOutputStream"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mBO8gVsUEeKE--wY69ZEDQ" name="net">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBO8glsUEeKE--wY69ZEDQ" name="MalformedURLException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBO8g1sUEeKE--wY69ZEDQ" name="URL"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBPjlVsUEeKE--wY69ZEDQ" name="HttpURLConnection"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mBPjk1sUEeKE--wY69ZEDQ" name="math">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBPjlFsUEeKE--wY69ZEDQ" name="BigDecimal"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mBPjllsUEeKE--wY69ZEDQ" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBQKoFsUEeKE--wY69ZEDQ" name="Date"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBQKoVsUEeKE--wY69ZEDQ" name="Vector"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBTN8lsUEeKE--wY69ZEDQ" name="Timer"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mBQxslsUEeKE--wY69ZEDQ" name="awt">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBQxs1sUEeKE--wY69ZEDQ" name="Dimension"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBQxtFsUEeKE--wY69ZEDQ" name="Image"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBQxtVsUEeKE--wY69ZEDQ" name="Toolkit"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBRYxVsUEeKE--wY69ZEDQ" name="Graphics"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_mBR_0FsUEeKE--wY69ZEDQ" name="event">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mBR_0VsUEeKE--wY69ZEDQ" name="WindowAdapter"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mBR_0lsUEeKE--wY69ZEDQ" name="WindowEvent"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mIWRIVsUEeKE--wY69ZEDQ" name="ActionEvent"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mJ6XYFsUEeKE--wY69ZEDQ" name="MouseEvent"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBSm4lsUEeKE--wY69ZEDQ" name="Component"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_mBO8hFsUEeKE--wY69ZEDQ" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_mBO8hVsUEeKE--wY69ZEDQ" name="media">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBO8hlsUEeKE--wY69ZEDQ" name="*"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBO8h1sUEeKE--wY69ZEDQ" name="MediaLocator"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mBQKo1sUEeKE--wY69ZEDQ" name="swing">
+      <packagedElement xmi:type="uml:Package" xmi:id="_mBQxsFsUEeKE--wY69ZEDQ" name="table">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mBQxsVsUEeKE--wY69ZEDQ" name="DefaultTableModel"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mBT1AVsUEeKE--wY69ZEDQ" name="DefaultTableCellRenderer"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_mBT1AlsUEeKE--wY69ZEDQ" name="TableCellRenderer"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBRYwFsUEeKE--wY69ZEDQ" name="ImageIcon"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBRYwVsUEeKE--wY69ZEDQ" name="JFrame"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBRYwlsUEeKE--wY69ZEDQ" name="JLabel"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBRYw1sUEeKE--wY69ZEDQ" name="JPanel"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBRYxFsUEeKE--wY69ZEDQ" name="SwingUtilities"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBR_01sUEeKE--wY69ZEDQ" name="JFileChooser"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBSm4VsUEeKE--wY69ZEDQ" name="JOptionPane"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBTN81sUEeKE--wY69ZEDQ" name="JComponent"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBT1AFsUEeKE--wY69ZEDQ" name="SwingConstants"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mH1TwFsUEeKE--wY69ZEDQ" name="JButton"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mINHMFsUEeKE--wY69ZEDQ" name="JTextField"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mLRpUFsUEeKE--wY69ZEDQ" name="ButtonGroup"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mOCpcFsUEeKE--wY69ZEDQ" name="JComboBox"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mOofUFsUEeKE--wY69ZEDQ" name="JScrollPane"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mO5lEFsUEeKE--wY69ZEDQ" name="JTable"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mPbwkFsUEeKE--wY69ZEDQ" name="JToolBar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_mBQxtlsUEeKE--wY69ZEDQ" name="imageio">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_mBQxt1sUEeKE--wY69ZEDQ" name="ImageIO"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_mExYsFsUEeKE--wY69ZEDQ" name="Vector&lt;Vector>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_mE7wwFsUEeKE--wY69ZEDQ" name="Vector&lt;String>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_mFRH8FsUEeKE--wY69ZEDQ" name="Vector&lt;DownloadThread>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_mGX7MFsUEeKE--wY69ZEDQ" name="Object"/>
+</uml:Model>
